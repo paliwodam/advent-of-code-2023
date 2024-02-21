@@ -1,5 +1,5 @@
 
-def transformLines(lines):
+def transform_lines(lines):
     dx = len(lines)
     dy = len(lines[0])
 
@@ -64,7 +64,7 @@ def aoc(input):
     with open(input) as file:
         lines = [line.rstrip() for line in file]
 
-    image = transformLines(lines)
+    image = transform_lines(lines)
     double_column(image)
     double_row(image)
 
